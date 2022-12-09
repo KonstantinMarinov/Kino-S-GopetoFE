@@ -22,6 +22,13 @@ export class MoviePageComponent {
       year: 'testYear',
       reviewUrl: 'testUrl',
     },
+    {
+      id: 'testId',
+      name: 'testName',
+      month: 'testMonth',
+      year: 'testYear',
+      reviewUrl: 'testUrl',
+    },
   ];
 
   constructor(private movieService: MovieService) {}
