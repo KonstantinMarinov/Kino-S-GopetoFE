@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities; /*# sourceMappingURL=styles.css.map */
+
+@layer components {
+  .card
+    @apply
+    bg-white
+    text-gray-700
+    w-72
+    min-h-[10rem]
+    shadow-lg
+    rounded-md
+    overflow-hidden;
+}
