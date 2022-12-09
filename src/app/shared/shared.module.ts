@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 @NgModule({
   declarations: [],
   imports: [MovieModule],
-  providers: [MovieModule],
+  exports: [MovieModule],
+  providers: [],
 })
 export class SharedModule {}
