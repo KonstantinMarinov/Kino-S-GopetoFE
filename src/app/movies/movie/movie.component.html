@@ -1,5 +1,27 @@
-<div>
-  <ng-container>
-    <li *ngFor="let movie of movies">{{ movie.name }}</li>
-  </ng-container>
-</div>
+<!-- <div class="grid grid-cols-2 gap-4 p-4">
+  <div
+    *ngFor="let movie of movies"
+    class="flex w-full mx-4 border border-black rounded-lg"
+  >
+    <img
+      class="m-4 rounded-lg"
+      src="../../../assets/movie-posters/movie-poster.jpg"
+      alt="Image of the movie poster"
+    />
+    <div class="w-full self-center">
+      <p class="m-4 text-xl">{{ movie.name }}</p>
+      <p class="m-4 bg-yellow-900">{{ movie.year }}</p>
+      <p class="m-4 bg-red-900">{{ movie.month }}</p>
+      <p class="m-4 bg-green-900">{{ movie.reviewUrl }}</p>
+    </div>
+  </div>
+</div> -->
+
+<body
+  class="h-screen bg-gray-100 flex items-center justify-center overflow-hidden"
+>
+  <div
+    class="bg-white text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md"
+    *ngFor="let movie of movies"
+  ></div>
+</body>
