@@ -31,10 +31,12 @@ export class MoviePageComponent {
     },
   ];
 
+  movie: IMovie = this.movies[0];
+
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    console.log(this.movies);
+    console.log(this.movie);
 
     this.getMovies();
   }
