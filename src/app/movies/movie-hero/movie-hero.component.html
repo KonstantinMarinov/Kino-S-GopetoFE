@@ -4,7 +4,7 @@
     src="../../../assets/movie-posters/movie-poster.jpg"
     alt="Image of the movie poster"
   />
-  <div class="flex flex-col justify-between absolute h-5/6 ml-12 mt-4">
+  <div class="flex flex-col justify-between absolute w-full h-5/6 px-12">
     <div>
       <p
         class="my-4 text-white opacity-50 hover:opacity-100 cursor-pointer text-5xl"
@@ -15,17 +15,33 @@
         watched in {{ this.movie.month }}
       </p>
     </div>
-    <div class="mt-4">
-      <button
-        class="bg-white text-black hover:opacity-50 font-bold mr-4 py-2 px-4 rounded"
-      >
-        Play
-      </button>
-      <button
-        class="bg-white opacity-60 text-black hover:opacity-30 font-bold py-2 px-4 rounded"
-      >
-        Review
-      </button>
+    <div class="flex w-full mt-4">
+      <div class="w-full">
+        <button
+          class="bg-white text-black hover:opacity-50 font-bold mr-4 py-2 px-4 rounded"
+        >
+          Play
+        </button>
+        <button
+          class="bg-white opacity-70 text-black hover:opacity-30 font-bold mr-4 py-2 px-4 rounded"
+        >
+          Review
+        </button>
+      </div>
+      <div class="flex justify-center w-full">
+        <button
+          class="bg-white opacity-40 text-black hover:opacity-80 font-bold w-56 py-2 px-4 rounded"
+        >
+          Go to Gallery
+        </button>
+      </div>
+      <div class="flex justify-end w-full">
+        <button
+          class="bg-white text-black hover:opacity-50 font-bold py-2 px-4 rounded"
+        >
+          Sound
+        </button>
+      </div>
     </div>
   </div>
 </div>

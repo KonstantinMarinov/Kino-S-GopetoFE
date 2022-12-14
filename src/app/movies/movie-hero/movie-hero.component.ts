@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { IMovie } from '../movie/movie.interface';
 
 @Component({
@@ -8,8 +8,8 @@ import { IMovie } from '../movie/movie.interface';
 export class MovieHeroComponent {
   movie: IMovie = {
     id: 'testId',
-    name: 'Midway',
-    month: 'July',
+    name: 'Harry Potter and The Deathly Hallows',
+    month: 'August',
     year: '2022',
     reviewUrl: 'testUrl',
   };
