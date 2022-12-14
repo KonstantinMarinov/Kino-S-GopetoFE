@@ -1,19 +1,29 @@
 <div class="flex">
   <img
-    class="w-full"
+    class="w-full h-full opacity-80"
     src="../../../assets/movie-posters/movie-poster.jpg"
     alt="Image of the movie poster"
   />
-  <div class="flex flex-col items-end absolute ml-12 mt-4">
-    <p class="my-4 text-black text-5xl">{{ this.movie.name }}</p>
-    <p class="my-2 text-white text-3xl">{{ this.movie.month }}</p>
+  <div class="flex flex-col justify-between absolute w-full h-5/6 ml-12 mt-4">
+    <div>
+      <p
+        class="my-4 text-white opacity-50 hover:opacity-100 cursor-pointer text-5xl"
+      >
+        {{ this.movie.name }}
+      </p>
+      <p class="my-2 text-white opacity-60 cursor-default text-3xl">
+        watched in {{ this.movie.month }}
+      </p>
+    </div>
     <div class="mt-4">
       <button
-        class="bg-white hover:bg-gray text-black font-bold mr-4 py-2 px-4 rounded"
+        class="bg-white text-black hover:opacity-50 font-bold mr-4 py-2 px-4 rounded"
       >
         Play
       </button>
-      <button class="bg-white text-black font-bold py-2 px-4 rounded">
+      <button
+        class="bg-white opacity-60 text-black hover:opacity-30 font-bold py-2 px-4 rounded"
+      >
         Review
       </button>
     </div>
