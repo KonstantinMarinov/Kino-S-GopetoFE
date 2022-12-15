@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IMovieRows } from './movie-row/movie-row.interface';
 import { IMovie } from './movie/movie.interface';
 import { MovieService } from './movies.service';
 
@@ -31,10 +32,16 @@ export class MoviePageComponent {
     },
   ];
 
+  movie: IMovie = this.movies[0];
+
+  movieRows: IMovieRows = {
+    years: ['2011', '2012', '2013', '2014', '2015', '2016'],
+  };
+
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    console.log(this.movies);
+    console.log(this.movie);
 
     this.getMovies();
   }
