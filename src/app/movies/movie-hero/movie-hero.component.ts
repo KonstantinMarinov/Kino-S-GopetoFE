@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { IMovie } from '../movie/movie.interface';
 
 @Component({
@@ -13,4 +13,10 @@ export class MovieHeroComponent {
     year: '2022',
     reviewUrl: 'testUrl',
   };
+
+  screenWidth = window.innerWidth;
+
+  @HostListener('window:resize', ['$event']) onWindowResize() {
+    this.screenWidth = window.innerWidth;
+  }
 }

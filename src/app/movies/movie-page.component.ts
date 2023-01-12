@@ -41,8 +41,6 @@ export class MoviePageComponent {
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    console.log(this.movie);
-
     this.getMovies();
   }
 
